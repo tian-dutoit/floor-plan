@@ -13,8 +13,12 @@ export default class Unit extends Component {
       stroke: 'rgb(0,0,0)'
     }
     const divStyle = {
-      width: `${this.props.unit.width}px`,
-      height: `${this.props.unit.length}px`,
+      width: this.props.orientation
+        ? `${this.props.unit.width}px`
+        : `${this.props.unit.length}px`,
+      height: this.props.orientation
+        ? `${this.props.unit.length}px`
+        : `${this.props.unit.width}px`,
       position: 'absolute',
       left: this.props.orientation ? `${this.props.unit.coords[0]}px` : ``,
       top: this.props.orientation
@@ -24,11 +28,30 @@ export default class Unit extends Component {
     }
     return (
       <div style={divStyle}>
-        <svg width={this.props.unit.width} height={this.props.unit.length}>
+        <svg
+          width={
+            this.props.orientation
+              ? this.props.unit.width
+              : this.props.unit.length
+          }
+          height={
+            this.props.orientation
+              ? this.props.unit.length
+              : this.props.unit.width
+          }
+        >
           <g>
             <rect
-              width={this.props.unit.width}
-              height={this.props.unit.length}
+              width={
+                this.props.orientation
+                  ? this.props.unit.width
+                  : this.props.unit.length
+              }
+              height={
+                this.props.orientation
+                  ? this.props.unit.length
+                  : this.props.unit.width
+              }
               style={unitStyle}
             />
             <text
