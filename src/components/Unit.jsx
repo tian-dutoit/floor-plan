@@ -13,45 +13,19 @@ export default class Unit extends Component {
       stroke: 'rgb(0,0,0)'
     }
     const divStyle = {
-      width: this.props.orientation
-        ? `${this.props.unit.width}px`
-        : `${this.props.unit.length}px`,
-      height: this.props.orientation
-        ? `${this.props.unit.length}px`
-        : `${this.props.unit.width}px`,
+      width: `${this.props.unit.width}px`,
+      height: `${this.props.unit.length}px`,
       position: 'absolute',
-      left: this.props.orientation ? `${this.props.unit.coords[0]}px` : ``,
-      top: this.props.orientation
-        ? `${this.props.unit.coords[1]}px`
-        : `${this.props.unit.coords[0]}px`,
-      right: !this.props.orientation && `${this.props.unit.coords[1]}px`
+      left: `${this.props.unit.coords[0]}px`,
+      top: `${this.props.unit.coords[1]}px`
     }
     return (
       <div style={divStyle}>
-        <svg
-          width={
-            this.props.orientation
-              ? this.props.unit.width
-              : this.props.unit.length
-          }
-          height={
-            this.props.orientation
-              ? this.props.unit.length
-              : this.props.unit.width
-          }
-        >
+        <svg width={this.props.unit.width} height={this.props.unit.length}>
           <g>
             <rect
-              width={
-                this.props.orientation
-                  ? this.props.unit.width
-                  : this.props.unit.length
-              }
-              height={
-                this.props.orientation
-                  ? this.props.unit.length
-                  : this.props.unit.width
-              }
+              width={this.props.unit.width}
+              height={this.props.unit.length}
               style={unitStyle}
             />
             <text

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Unit from './Unit'
 
-export class Homepage extends Component {
+export class HomepageFlip extends Component {
   static propTypes = {
     prop: PropTypes
   }
@@ -11,8 +11,7 @@ export class Homepage extends Component {
     super(props)
 
     this.state = {
-      counter: 1,
-      orientation: 0,
+      orientation: true,
       units: [
         { id: 100, width: 40, length: 40, coords: [0, 0], isContainer: true },
         { id: 101, width: 40, length: 40, coords: [40, 0], isContainer: true },
@@ -36,16 +35,42 @@ export class Homepage extends Component {
         { id: 113, width: 40, length: 40, coords: [580, 0], isContainer: true },
         { id: 114, width: 40, length: 40, coords: [620, 0], isContainer: true },
         { id: 115, width: 40, length: 40, coords: [660, 0], isContainer: true }
+
+        // { id: 0, width: 200, length: 100, coords: [0, 0], isContainer: true },
+        // {
+        //   id: 1,
+        //   width: 100,
+        //   length: 250,
+        //   coords: [200, 120],
+        //   isContainer: true
+        // },
+        // {
+        //   id: 2,
+        //   width: 250,
+        //   length: 50,
+        //   coords: [300, 600],
+        //   isContainer: true
+        // },
+        // {
+        //   id: 20,
+        //   width: 100,
+        //   length: 100,
+        //   coords: [300, 0],
+        //   isContainer: false
+        // },
+        // { id: 3, width: 75, length: 10, coords: [550, 200], isContainer: true },
+        // { id: 4, width: 20, length: 10, coords: [570, 0], isContainer: true },
+        // { id: 5, width: 20, length: 10, coords: [590, 75], isContainer: true },
+        // { id: 6, width: 20, length: 10, coords: [610, 30], isContainer: true },
+        // { id: 7, width: 20, length: 10, coords: [630, 500], isContainer: true }
       ]
     }
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
-    const rotationOptions = [0, 90, 180, 270]
     this.setState({
-      orientation: rotationOptions[this.state.counter],
-      counter: this.state.counter <= 2 ? this.state.counter + 1 : 0
+      orientation: !this.state.orientation
     })
   }
 
@@ -53,12 +78,9 @@ export class Homepage extends Component {
     return (
       <div>
         <button onClick={this.handleClick} className="flip-button">
-          Rotate
+          Flip
         </button>
-        <div
-          className="homepage-container"
-          style={{ transform: `rotate(${this.state.orientation}deg)` }}
-        >
+        <div className="homepage-container">
           {this.state.units.map(unit => {
             return <Unit unit={unit} orientation={this.state.orientation} />
           })}
@@ -75,4 +97,4 @@ const mapDispatchToProps = {}
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Homepage)
+)(HomepageFlip)

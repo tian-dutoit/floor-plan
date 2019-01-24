@@ -4,10 +4,10 @@
 
 .homepage-container {
   border: 1px solid black;
-  position: fixed;
+  position: absolute;
   width: 1000px;
   height: 750px;
-  margin: 25px;
+  margin: 150px;
 }
 
 .flip-button {
