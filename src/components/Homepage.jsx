@@ -23,18 +23,18 @@ export class Homepage extends Component {
         { id: 107, width: 40, length: 40, coords: [280, 0], isContainer: true },
         { id: 108, width: 40, length: 40, coords: [320, 0], isContainer: true },
         { id: 109, width: 40, length: 40, coords: [360, 0], isContainer: true },
-        { id: 110, width: 20, length: 40, coords: [380, 0], isContainer: true },
+        { id: 110, width: 20, length: 40, coords: [400, 0], isContainer: true },
         {
           id: 111,
           width: 120,
           length: 40,
-          coords: [400, 0],
+          coords: [420, 0],
           isContainer: false
         },
-        { id: 112, width: 40, length: 40, coords: [520, 0], isContainer: true },
-        { id: 113, width: 40, length: 40, coords: [560, 0], isContainer: true },
-        { id: 114, width: 40, length: 40, coords: [600, 0], isContainer: true },
-        { id: 115, width: 40, length: 40, coords: [640, 0], isContainer: true }
+        { id: 112, width: 40, length: 40, coords: [540, 0], isContainer: true },
+        { id: 113, width: 40, length: 40, coords: [580, 0], isContainer: true },
+        { id: 114, width: 40, length: 40, coords: [620, 0], isContainer: true },
+        { id: 115, width: 40, length: 40, coords: [660, 0], isContainer: true }
 
         // { id: 0, width: 200, length: 100, coords: [0, 0], isContainer: true },
         // {
