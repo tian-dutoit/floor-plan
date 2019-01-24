@@ -44,7 +44,8 @@ export class Homepage extends Component {
 
   handleClick() {
     const rotationOptions = [0, 90, 180, 270]
-    const translationOptions = [0, 125, 0, -125]
+    // const translationOptions = [0, 125, 0, -125]
+    const translationOptions = [0, 20, 0, -20]
     this.setState({
       orientation: rotationOptions[this.state.counter],
       translation: translationOptions[this.state.counter],
@@ -63,7 +64,7 @@ export class Homepage extends Component {
           style={{
             transform: `rotate(${this.state.orientation}deg) translate(${
               this.state.translation
-            }px, 0%)`
+            }%, 0%)`
           }}
         >
           {this.state.units.map(unit => {
