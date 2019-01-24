@@ -13,6 +13,7 @@ export class Homepage extends Component {
     this.state = {
       counter: 1,
       orientation: 0,
+      translation: 0,
       units: [
         { id: 100, width: 40, length: 40, coords: [0, 0], isContainer: true },
         { id: 101, width: 40, length: 40, coords: [40, 0], isContainer: true },
@@ -43,8 +44,10 @@ export class Homepage extends Component {
 
   handleClick() {
     const rotationOptions = [0, 90, 180, 270]
+    const translationOptions = [0, 125, 0, -125]
     this.setState({
       orientation: rotationOptions[this.state.counter],
+      translation: translationOptions[this.state.counter],
       counter: this.state.counter <= 2 ? this.state.counter + 1 : 0
     })
   }
@@ -57,7 +60,11 @@ export class Homepage extends Component {
         </button>
         <div
           className="homepage-container"
-          style={{ transform: `rotate(${this.state.orientation}deg)` }}
+          style={{
+            transform: `rotate(${this.state.orientation}deg) translate(${
+              this.state.translation
+            }px, 0%)`
+          }}
         >
           {this.state.units.map(unit => {
             return <Unit unit={unit} orientation={this.state.orientation} />
