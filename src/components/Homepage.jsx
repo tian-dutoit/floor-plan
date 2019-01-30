@@ -55,6 +55,210 @@ export class Homepage extends Component {
           length: 160,
           coords: [1000, 0],
           isContainer: true
+        },
+
+        {
+          id: 1100,
+          width: 40,
+          length: 40,
+          coords: [0, 250],
+          isContainer: true
+        },
+        {
+          id: 1101,
+          width: 40,
+          length: 40,
+          coords: [40, 250],
+          isContainer: true
+        },
+        {
+          id: 1102,
+          width: 40,
+          length: 40,
+          coords: [80, 250],
+          isContainer: true
+        },
+        {
+          id: 1103,
+          width: 40,
+          length: 40,
+          coords: [120, 250],
+          isContainer: true
+        },
+        {
+          id: 1104,
+          width: 40,
+          length: 40,
+          coords: [160, 250],
+          isContainer: true
+        },
+        {
+          id: 1105,
+          width: 40,
+          length: 40,
+          coords: [200, 250],
+          isContainer: true
+        },
+        {
+          id: 1106,
+          width: 40,
+          length: 40,
+          coords: [240, 250],
+          isContainer: true
+        },
+        {
+          id: 1107,
+          width: 40,
+          length: 40,
+          coords: [280, 250],
+          isContainer: true
+        },
+        {
+          id: 1108,
+          width: 40,
+          length: 40,
+          coords: [320, 250],
+          isContainer: true
+        },
+        {
+          id: 1109,
+          width: 40,
+          length: 40,
+          coords: [360, 250],
+          isContainer: true
+        },
+        {
+          id: 1110,
+          width: 20,
+          length: 40,
+          coords: [400, 250],
+          isContainer: true
+        },
+        {
+          id: 1111,
+          width: 120,
+          length: 40,
+          coords: [420, 250],
+          isContainer: false
+        },
+        {
+          id: 1112,
+          width: 40,
+          length: 40,
+          coords: [540, 250],
+          isContainer: true
+        },
+        {
+          id: 1113,
+          width: 40,
+          length: 40,
+          coords: [580, 250],
+          isContainer: true
+        },
+        {
+          id: 1114,
+          width: 40,
+          length: 40,
+          coords: [620, 250],
+          isContainer: true
+        },
+        {
+          id: 1115,
+          width: 40,
+          length: 40,
+          coords: [660, 250],
+          isContainer: true
+        },
+        {
+          id: 1116,
+          width: 40,
+          length: 40,
+          coords: [700, 250],
+          isContainer: true
+        },
+        {
+          id: 1117,
+          width: 40,
+          length: 40,
+          coords: [740, 250],
+          isContainer: true
+        },
+        {
+          id: 1118,
+          width: 40,
+          length: 40,
+          coords: [780, 250],
+          isContainer: true
+        },
+        {
+          id: 1119,
+          width: 20,
+          length: 40,
+          coords: [820, 250],
+          isContainer: true
+        },
+        {
+          id: 1120,
+          width: 20,
+          length: 40,
+          coords: [840, 250],
+          isContainer: true
+        },
+        {
+          id: 1121,
+          width: 20,
+          length: 40,
+          coords: [860, 250],
+          isContainer: true
+        },
+        {
+          id: 1122,
+          width: 20,
+          length: 40,
+          coords: [880, 250],
+          isContainer: true
+        },
+        {
+          id: 1123,
+          width: 20,
+          length: 40,
+          coords: [900, 250],
+          isContainer: true
+        },
+        {
+          id: 1124,
+          width: 20,
+          length: 40,
+          coords: [920, 250],
+          isContainer: true
+        },
+        {
+          id: 1125,
+          width: 20,
+          length: 40,
+          coords: [940, 250],
+          isContainer: true
+        },
+        {
+          id: 1126,
+          width: 20,
+          length: 40,
+          coords: [960, 250],
+          isContainer: true
+        },
+        {
+          id: 1127,
+          width: 20,
+          length: 40,
+          coords: [980, 250],
+          isContainer: true
+        },
+        {
+          id: 1128,
+          width: 140,
+          length: 160,
+          coords: [1000, 250],
+          isContainer: true
         }
       ]
     }
