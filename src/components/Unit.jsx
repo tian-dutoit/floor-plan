@@ -8,6 +8,7 @@ export default class Unit extends Component {
 
   render() {
     const unitStyle = {
+      cursor: 'pointer',
       fill: this.props.unit.isContainer ? 'rgb(0,0,255)' : 'transparent',
       strokeWidth: 3,
       stroke: 'rgb(0,0,0)'
